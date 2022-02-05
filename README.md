@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Model of the Coinbase Blockchain Web 3.0 App using Next.js, Sanity.io, thirdweb
+
 
 ## Getting Started
 
