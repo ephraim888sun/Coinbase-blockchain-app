@@ -1,4 +1,4 @@
-Model of the Coinbase Blockchain Web 3.0 App using Next.js, Sanity.io, thirdweb
+Model of the Coinbase Blockchain Web 3.0 App using [Next.js, Sanity.io, thirdweb]
 
 
 ## Getting Started
