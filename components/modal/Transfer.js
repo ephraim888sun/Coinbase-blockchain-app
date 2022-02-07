@@ -34,21 +34,22 @@ const Transfer = ({
             setBalance(balance.displayValue)
         }
 
-        if (activeThirdWebToken) [
+        if (activeThirdWebToken) {
             getBalance()
-        ]
+        }
     }, [activeThirdWebToken])
 
     const sendCrypto = async (amount, recipient) => {
-        console.log('sending crpyto...')
+        console.log('sending crypto...')
 
         if (activeThirdWebToken && amount && recipient) {
+            setAction('transferring')
             const tx = await activeThirdWebToken.transfer(
                 recipient,
                 amount.toString().concat('000000000000000000')
             )
             console.log(tx)
-            setAction('transferred')
+            setAction('transferred')                                                            
         }
         else {
             console.error('missing data')
@@ -86,22 +87,23 @@ const Transfer = ({
                 </Row>
                 <Divider />
                 <Row>
-                    <FieldName>Pay with</FieldName>
-                    <CoinSelectList>
+                    <FieldName>Pay w/</FieldName>
+                    <CoinSelectList onClick={() => setAction('select')}>
                         <Icon>
-                            <img str={imageUrl} />
+                            <img src={imageUrl} />
                         </Icon>
                         <CoinName>{selectedToken.name}</CoinName>
                     </CoinSelectList>
                 </Row>
             </TransferForm>
-
             <Row>
                 <Continue onClick={() => sendCrypto(amount, recipient)}>Continue</Continue>
             </Row>
             <Row>
                 <BalanceTitle>{selectedToken.symbol}</BalanceTitle>
-                <Balance>{balance} {selectedToken.symbol}</Balance>
+                <Balance>
+                    {balance} {selectedToken.symbol}
+                </Balance>
             </Row>
         </Wrapper>
     )
@@ -161,8 +163,8 @@ const Divider = styled.div`
 `
 
 const TransferForm = styled.div`
-border: 1px solid #282b2f;
-border-radius: 0.4rem;
+    border: 1px solid #282b2f;
+    border-radius: 0.4rem;
 `
 
 const Row = styled.div`
@@ -174,7 +176,7 @@ const Row = styled.div`
     font-size: 1.2rem;
 `
 const FieldName = styled.div`
-    flex: 0.5rem;
+    flex: 0.3;
     padding-left: 2rem;
 `
 const Icon = styled.div`
@@ -187,6 +189,7 @@ const Icon = styled.div`
     place-items: center;
 
     & > img {
+        /* margin: -0.5rem 1rem; */
         height: 120%;
         width: 120%;
         object-fit: cover;

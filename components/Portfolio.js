@@ -75,6 +75,8 @@ export const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
     )
 };
 
+export default Portfolio;
+
 const Wrapper = styled.div`
 flex: 1;
 display: flex;
@@ -104,8 +106,6 @@ const BalanceValue = styled.div`
     font-weight: 700;
     margin: 0.5rem 0;
 `
-
-
 
 const PortfolioTable = styled.div`
 margin-top: 1rem;
