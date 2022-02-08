@@ -14,7 +14,6 @@ https://fm-coinbase-blockchain-app-ephraim888sun.vercel.app/
 <br />👉  Deployed and hosted the app on Vercel 
 
 <p align="center">
-  <img src="coinbase-image.jpg" width="350" title="hover text">
-  <img src="coinbase-image.jpg" width="350" alt="accessibility text">
+  <img src="coinbase-image.jpg" width="100%" height="auto" title="hover text">
 </p>
 
