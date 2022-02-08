@@ -12,3 +12,6 @@ https://fm-coinbase-blockchain-app-ephraim888sun.vercel.app/
 <br />👉  Used GROQ to retrieve data from Sanity Studio and display it in my Web 3.0 App
 <br />👉  Created a send and receive functionality for my tokens on the blockchain
 <br />👉  Deployed and hosted the app on Vercel 
+
+![alt text](https://github.com/[ephraim888sun]/[Coinbase-blockchain-app]/blob/[main]/coinbase-image.jpg?raw=true)
+
