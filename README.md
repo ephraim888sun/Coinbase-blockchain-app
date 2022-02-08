@@ -13,5 +13,8 @@ https://fm-coinbase-blockchain-app-ephraim888sun.vercel.app/
 <br />👉  Created a send and receive functionality for my tokens on the blockchain
 <br />👉  Deployed and hosted the app on Vercel 
 
-![alt text](https://github.com/[ephraim888sun]/[Coinbase-blockchain-app]/blob/[main]/coinbase-image.jpg?raw=true)
+<p align="center">
+  <img src="coinbase-image.jpg" width="350" title="hover text">
+  <img src="coinbase-image.jpg" width="350" alt="accessibility text">
+</p>
 
